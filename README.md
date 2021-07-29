@@ -27,11 +27,13 @@ import 'prismjs/themes/prism-twilight.css'
 Create your demos in separate files to the documentation:
 
 ```tsx
+import { ButtonDemo } from './ButtonDemo'
+
 export default function ButtonDocs() {
   return (
     <DocLayout title="Buttons">
-      <MyButtonDemo />
-      <code data-path="./MyButtonDemo.tsx" data-lang="tsx" />
+      <ButtonDemo />
+      <code data-path="./ButtonDemo.tsx" data-lang="tsx" />
     </DocLayout>
   )
 }
