@@ -1,12 +1,12 @@
 # babel-plugin-source-code
 
-Convert JSX `<code>` elements to [Prism](https://github.com/PrismJS/prism/) syntax highlighted code blocks at build time. Great for React based documentation websites.
-
-At present the Prism supported languages are hardcoded to: bash, javascript, typescript, jsx, tsx, css, markup.
+Import file contents into your JSX `<code>` blocks at build time. Great for syntax highlighting component examples.
 
 # Installation
 
-Install with `yarn add -D babel-plugin-source-code` or `npm i -D babel-plugin-source-code`.
+Install [Prism](https://github.com/PrismJS/prism/) as per their guide.
+
+Install `yarn add -D babel-plugin-source-code` or `npm i -D babel-plugin-source-code`.
 
 Add it to your babel plugins config:
 
@@ -18,12 +18,6 @@ Add it to your babel plugins config:
 
 # Usage
 
-Import a [Prism](https://github.com/PrismJS/prism/) theme in your app:
-
-```js
-import 'prismjs/themes/prism-twilight.css'
-```
-
 Create your demos in separate files to the documentation:
 
 ```tsx
@@ -33,7 +27,11 @@ export default function ButtonDocs() {
   return (
     <DocLayout title="Buttons">
       <ButtonDemo />
-      <code data-path="./ButtonDemo.tsx" data-lang="tsx" />
+      <pre className="language-tsx">
+        <code className="language-tsx">
+          <ins data-path="./ButtonDemo.tsx" />
+        </code>
+      </pre>
     </DocLayout>
   )
 }
