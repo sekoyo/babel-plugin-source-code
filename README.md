@@ -24,7 +24,7 @@ Import a [Prism](https://github.com/PrismJS/prism/) theme in your app:
 import 'prismjs/themes/prism-twilight.css'
 ```
 
-Create your demos in seperate files to the documentation:
+Create your demos in separate files to the documentation:
 
 ```tsx
 export default function ButtonDocs() {
