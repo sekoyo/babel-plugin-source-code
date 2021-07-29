@@ -1,5 +1,5 @@
 {
-  "name": "babel-source-code",
+  "name": "babel-plugin-source-code",
   "version": "0.0.1",
   "description": "Convert JSX code elements to Prism syntax highlighted code blocks at build time (not runtime cost).",
   "main": "src/index.js",
