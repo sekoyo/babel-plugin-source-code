@@ -6,13 +6,13 @@ At present the Prism supported languages are hardcoded to: bash, javascript, typ
 
 # Installation
 
-Install with `yarn add -D babel-source-code` or `npm i -D babel-source-code`.
+Install with `yarn add -D babel-plugin-source-code` or `npm i -D babel-plugin-source-code`.
 
 Add it to your babel plugins config:
 
 ```json
 {
-  "plugins": ["babel-source-code"]
+  "plugins": ["babel-plugin-source-code"]
 }
 ```
 
