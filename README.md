@@ -1,6 +1,6 @@
-# babel-source-code
+# babel-plugin-source-code
 
-Convert JSX `<code>` elements to [Prism](https://github.com/PrismJS/prism/) syntax highlighted code blocks at build time (not runtime cost). Great for React based documentation websites.
+Convert JSX `<code>` elements to [Prism](https://github.com/PrismJS/prism/) syntax highlighted code blocks at build time. Great for React based documentation websites.
 
 At present the Prism supported languages are hardcoded to: bash, javascript, typescript, jsx, tsx, css, markup.
 
